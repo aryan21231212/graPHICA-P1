@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e9f0f5;
+    color: #333;
+    overflow-x: hidden; /* Prevents horizontal scrolling on small screens */
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: #1a73e8;  /* Blue header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease-in forwards; /* Header fades in */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    animation: fadeIn 1.4s ease-in forwards;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0; /* Slight color change on hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 1s ease-in forwards; /* Container fades in */
+}
+
+/* Section Styles */
+.about-section, .members-section, .contact-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1a73e8; /* Consistent blue for headings */
+    animation: fadeIn 1.4s ease-in forwards;
+}
+
+.about-section {
+    background-color: #f7fbff;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in forwards; /* Image fades in */
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: fadeIn 1.7s ease-in forwards; /* Members fade in */
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Elevate on hover */
+}
+
+.member-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.member-img:hover {
+    transform: scale(1.1); /* Zoom-in on hover */
+}
+
+.contact-section {
+    background-color: #f4f8fb;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in forwards; /* Image fades in */
+}
+
+footer {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    animation: fadeIn 2s ease-in forwards; /* Footer fades in */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .members-grid {
+        grid-template-columns: 1fr; /* Stack members on smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    .about-img, .contact-img {
+        max-width: 100%;
+        height: auto; /* Make images responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Further reduce heading size on mobile */
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}

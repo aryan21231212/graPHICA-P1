@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+            <h1>Registration Form</h1><br><br>
+            <form action="submit-form.php" method="post" id="registrationForm">
+
+                <label for="clubs">Select Clubs</label>
+                <!-- <input type="text" id="clubs" name="clubs" placeholder="Clubs" required> -->
+                <select name="clubs" id="clubs">
+                    <option value="OSS">OSS</option>
+                    <option value="cycling club">cycling club</option>
+                    <option value="Nature">Nature club</option>
+                    <option value="R&D">R&D</option>
+                    <option value="Spiritual club">Spiritual Club</option>
+                    <option value="GDXR">GDXR</option>
+                </select><br><br><br>
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br><br>
+    
+                <!-- Mobile Number Field -->
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+                <small>Format: 10-digit number (e.g., 1234567890)</small><br><br><br>
+    
+                <!-- Registration Number Field -->
+                <label for="reg_number">Registration Number:</label>
+                <input type="text" id="reg_number" name="reg_number" placeholder="Enter your registration number" required><br><br><br>
+    
+                <!-- Gmail Field -->
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Gmail" pattern="[a-z0-9._%+-]+@gmail\.com" required>
+                <small>Only Gmail addresses are accepted.</small><br><br><br>
+
+                <label for="Branch">Branch</label>
+                <!-- <input type="text" id="Branch" name="Branch" placeholder="Enter your Gmail" required> -->
+                <select name="Branch" id="Branch">
+                    <option value="Computer">Computer</option>
+                    <option value="IT">IT</option>
+                    <option value="ENTC">ENTC</option>
+                    <option value="Mech">Mech</option>
+                    <option value="ARE">ARE</option>
+                </select><br><br><br>
+
+                <label for="des">Why you want to join this club</label>
+                <input type="text" id="des" name="des" placeholder="Write Description" required><br><br><br>
+
+                <label for="tech">Enter you skills</label>
+                <input type="text" id="tech" name="tech" placeholder="Skills" required><br><br><br>
+
+
+                <!-- Submit Button -->
+               <a href="http://127.0.0.1:5500/index.html"><button class="button" onclick="saveData()" id="btn" type="submit">Submit</button></a> <br><br>
+
+            </form>
+        </div>
+    
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

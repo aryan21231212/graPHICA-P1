@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Sixtyfour+Convergence&display=swap');
+ *{ padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(desktop-wallpaper-glitch-effect.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.container{
+  height: 100vh;
+
+  
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: black;
+  
+  
+}
+
+.nav ul{
+  display: flex;
+  
+}
+.nav ul li a{
+text-decoration: none;
+color:white ;
+font-size: 22px;
+font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.nav ul li:hover{
+background-color:rgba(248, 248, 255, 0.562);
+border-radius: 16px;
+}
+.nav ul li {
+text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+.nav .logo{
+  margin-right: 700px;
+}
+.logo img{
+  height: 70px;
+  border-radius: 30px;
+}
+.logo img:hover{
+ transform: scale(1.5);
+ transition-delay: .5s;
+ transition-duration: 2s;
+ border-radius: 30px;
+}
+
+.body{
+  height: 40vh;
+  display:flex;
+justify-content: center;
+align-items: center;
+}
+.body h1{
+  color: darkgrey;
+  font-size: 60px;
+font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+@keyframes slideinleft{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(500);
+  }
+}
+.heading{
+  animation-name: slideinleft;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+
+}
+.heading:hover{
+  transform: scale(1.5);
+  text-transform: uppercase;
+  /* transition-delay: 0.8s; */
+  background-color: rgba(128, 128, 128, 0.227);
+  box-shadow: 2px 4px 5px;
+}
+
+.clubs{
+  display: flex;
+  justify-content: center;
+
+}
+.clubs img{
+  border-radius: 150px;
+  padding: 20px;
+}
+.clubs img:hover{
+ transform:scale(1.5);
+ transition-duration: 2s;
+
+}
+
+@keyframes club{
+  from{
+    transform: translateX(300px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.clubs{
+  animation-name: club;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+@media only screen and (max-width:455px){
+  .container{
+    flex-direction: column;
+  }
+}
+

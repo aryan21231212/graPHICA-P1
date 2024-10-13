@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kalnia+Glaze:wght@100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+
+.nav h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.nav h1:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;}
+.nav h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;}
+
+.nav{
+    padding-top: 20px;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.body img{
+    height: 260px;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.body img:hover{
+   transform: scale(1.5);
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.mid h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.mid h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;
+}
+
+.se{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+    
+.se img{
+    height: 260px;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.se img:hover{
+    transform: scale(1.5);
+ }
+ .foot h2{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.foot h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.events{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+    
+.events img{
+    height: 260px;
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.events img:hover{
+    transform: scale(1.5);
+ }
+
+ .about h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.about h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.us p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.recr h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.recr h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;
+}
+.recr{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.r h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    font-style: italic;
+}
+.r:hover{
+    background-color: rgba(0, 255, 255, 0.322);
+}
+.us:hover{
+    background-color: rgba(0, 255, 255, 0.322);
+}
+
+.follow{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.follow h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.follow h2:hover{
+    text-transform: uppercase;
+    transition-duration: 1.5s;
+    text-shadow: 2px 3px 4px;
+}
+.links {
+    margin-top: 40px;
+    display:flex;
+   justify-content: center;
+   margin-bottom: 40px;
+  }
+.links .p{
+    padding-left: 20px;
+}  
+.links .p{
+    padding-left: 20px;
+    font-size: 20px;
+}  
+.links .p1{
+    padding-left: 20px;
+    font-size: 20px;
+}  
+@keyframes slideinleft{
+    from{
+      transform: translateX(-300px);
+    }
+    to{
+      transform: translateX(0px);
+    }
+  }
+  .body{
+    animation-name: slideinleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  
+  }
+@keyframes slideinleft{
+    from{
+      transform: translateX(400px);
+    }
+    to{
+      transform: translateX(0px);
+    }
+  }
+  .events{
+    animation-name: slideinleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  
+  }
